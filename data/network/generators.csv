@@ -1,0 +1,4 @@
+generator,node,p_min_mw,p_max_mw,marginal_cost_eur_per_mwh,startup_cost_eur,initial_on,initial_output_mw
+A,1,40,100,10,500,0,0
+B,2,0,60,25,0,0,0
+C,2,0,50,50,0,0,0

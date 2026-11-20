@@ -1,0 +1,182 @@
+{
+  "instance": "network",
+  "uc": {
+    "status": "optimal",
+    "objective_eur": 1500.0,
+    "energy_cost_eur": 1000.0,
+    "startup_cost_eur": 500.0,
+    "dispatch": [
+      {
+        "generator": "A",
+        "period": 1,
+        "production_mw": 50.0,
+        "on": 1,
+        "startup": 1
+      },
+      {
+        "generator": "B",
+        "period": 1,
+        "production_mw": 20.0,
+        "on": 1,
+        "startup": 1
+      },
+      {
+        "generator": "C",
+        "period": 1,
+        "production_mw": 0.0,
+        "on": 1,
+        "startup": 1
+      }
+    ],
+    "runtime_seconds": 0.009000062942504883,
+    "line_flows": [
+      {
+        "line": "L12",
+        "period": 1,
+        "from_node": 1,
+        "to_node": 2,
+        "flow_mw": 30.0
+      }
+    ]
+  },
+  "ip": {
+    "status": "optimal",
+    "objective_eur": 1500.0,
+    "energy_prices": [
+      {
+        "period": 1,
+        "node": 1,
+        "price_eur_per_mwh": 10.0
+      },
+      {
+        "period": 1,
+        "node": 2,
+        "price_eur_per_mwh": 25.0
+      }
+    ],
+    "runtime_seconds": 0.0,
+    "commitment_duals": [
+      {
+        "generator": "A",
+        "period": 1,
+        "on_dual_eur": 0.0,
+        "startup_dual_eur": 500.0,
+        "commitment_payment_eur": 500.0
+      },
+      {
+        "generator": "B",
+        "period": 1,
+        "on_dual_eur": 0.0,
+        "startup_dual_eur": 0.0,
+        "commitment_payment_eur": 0.0
+      },
+      {
+        "generator": "C",
+        "period": 1,
+        "on_dual_eur": 0.0,
+        "startup_dual_eur": 0.0,
+        "commitment_payment_eur": 0.0
+      }
+    ],
+    "settlement_by_generator": [
+      {
+        "generator": "A",
+        "energy_revenue_eur": 500.0,
+        "operating_cost_eur": 1000.0,
+        "commitment_payment_eur": 500.0,
+        "signed_cost_recovery_residual_eur": 0.0
+      },
+      {
+        "generator": "B",
+        "energy_revenue_eur": 500.0,
+        "operating_cost_eur": 500.0,
+        "commitment_payment_eur": 0.0,
+        "signed_cost_recovery_residual_eur": 0.0
+      },
+      {
+        "generator": "C",
+        "energy_revenue_eur": 0.0,
+        "operating_cost_eur": 0.0,
+        "commitment_payment_eur": 0.0,
+        "signed_cost_recovery_residual_eur": 0.0
+      }
+    ],
+    "total_commitment_payment_eur": 500.0,
+    "total_signed_cost_recovery_residual_eur": 0.0,
+    "congestion_rent_eur": 450.0
+  },
+  "chp": {
+    "algorithm": "cutting_plane",
+    "energy_prices": [
+      {
+        "period": 1,
+        "node": 1,
+        "price_eur_per_mwh": 14.999932491224229
+      },
+      {
+        "period": 1,
+        "node": 2,
+        "price_eur_per_mwh": 25.000017112361704
+      }
+    ],
+    "dual_objective_eur": 1249.9959400667433,
+    "upper_bound_eur": 1250.0,
+    "gap_eur": 0.004059933256712611,
+    "status": "converged",
+    "iterations": 20,
+    "dual_history_eur": [
+      0.0,
+      126.92307692467756,
+      813.4615384624353,
+      1004.2582419677587,
+      1056.5202942315934,
+      1193.4797057654405,
+      1193.4797057654405,
+      1221.7398528836898,
+      1235.869927199048,
+      1242.934980707863,
+      1246.4675199680664,
+      1248.2338814006282,
+      1249.1169648695384,
+      1249.5584883356116,
+      1249.779246487119,
+      1249.8910086082342,
+      1249.9459322303717,
+      1249.9750447348354,
+      1249.9892655788642,
+      1249.9959400667433
+    ],
+    "solver_runtime_seconds": 0.05699968338012695,
+    "runtime_seconds": 0.08458450000034645,
+    "total_uplift_eur": 250.0040599332567,
+    "settlement_by_generator": [
+      {
+        "generator": "A",
+        "energy_revenue_eur": 749.9966245612114,
+        "operating_cost_eur": 1000.0,
+        "scheduled_profit_eur": -250.00337543878857,
+        "best_profit_eur": 0.0,
+        "lost_opportunity_cost_eur": 250.00337543878857
+      },
+      {
+        "generator": "B",
+        "energy_revenue_eur": 500.0003422472341,
+        "operating_cost_eur": 500.0,
+        "scheduled_profit_eur": 0.00034224723407305646,
+        "best_profit_eur": 0.001026741702162326,
+        "lost_opportunity_cost_eur": 0.0006844944680892695
+      },
+      {
+        "generator": "C",
+        "energy_revenue_eur": 0.0,
+        "operating_cost_eur": 0.0,
+        "scheduled_profit_eur": 0.0,
+        "best_profit_eur": 0.0,
+        "lost_opportunity_cost_eur": 0.0
+      }
+    ],
+    "generator_uplift_eur": 250.00405993325666,
+    "network_opportunity_cost_eur": 5.684341886080802e-14,
+    "congestion_rent_eur": 300.0025386341242
+  }
+}

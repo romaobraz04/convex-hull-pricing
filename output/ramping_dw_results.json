@@ -1,0 +1,293 @@
+{
+  "instance": "ramping",
+  "uc": {
+    "status": "optimal",
+    "objective_eur": 8200.0,
+    "energy_cost_eur": 8100.0,
+    "startup_cost_eur": 100.0,
+    "dispatch": [
+      {
+        "generator": "A",
+        "period": 1,
+        "production_mw": 70.0,
+        "on": 1,
+        "startup": 0
+      },
+      {
+        "generator": "A",
+        "period": 2,
+        "production_mw": 90.0,
+        "on": 1,
+        "startup": 0
+      },
+      {
+        "generator": "A",
+        "period": 3,
+        "production_mw": 110.0,
+        "on": 1,
+        "startup": 0
+      },
+      {
+        "generator": "A",
+        "period": 4,
+        "production_mw": 80.0,
+        "on": 1,
+        "startup": 0
+      },
+      {
+        "generator": "B",
+        "period": 1,
+        "production_mw": 0.0,
+        "on": 1,
+        "startup": 1
+      },
+      {
+        "generator": "B",
+        "period": 2,
+        "production_mw": 40.0,
+        "on": 1,
+        "startup": 0
+      },
+      {
+        "generator": "B",
+        "period": 3,
+        "production_mw": 80.0,
+        "on": 1,
+        "startup": 0
+      },
+      {
+        "generator": "B",
+        "period": 4,
+        "production_mw": 0.0,
+        "on": 1,
+        "startup": 0
+      },
+      {
+        "generator": "C",
+        "period": 1,
+        "production_mw": 0.0,
+        "on": 1,
+        "startup": 1
+      },
+      {
+        "generator": "C",
+        "period": 2,
+        "production_mw": 0.0,
+        "on": 1,
+        "startup": 0
+      },
+      {
+        "generator": "C",
+        "period": 3,
+        "production_mw": 20.0,
+        "on": 1,
+        "startup": 0
+      },
+      {
+        "generator": "C",
+        "period": 4,
+        "production_mw": 0.0,
+        "on": 1,
+        "startup": 0
+      }
+    ],
+    "runtime_seconds": 0.006000041961669922
+  },
+  "ip": {
+    "status": "optimal",
+    "objective_eur": 8200.0,
+    "energy_prices": [
+      {
+        "period": 1,
+        "price_eur_per_mwh": 25.0
+      },
+      {
+        "period": 2,
+        "price_eur_per_mwh": 25.0
+      },
+      {
+        "period": 3,
+        "price_eur_per_mwh": 80.0
+      },
+      {
+        "period": 4,
+        "price_eur_per_mwh": -60.0
+      }
+    ],
+    "runtime_seconds": 0.002000093460083008,
+    "commitment_duals": [
+      {
+        "generator": "A",
+        "period": 1,
+        "on_dual_eur": -300.0,
+        "startup_dual_eur": 0.0,
+        "commitment_payment_eur": -300.0
+      },
+      {
+        "generator": "A",
+        "period": 2,
+        "on_dual_eur": 0.0,
+        "startup_dual_eur": -300.0,
+        "commitment_payment_eur": 0.0
+      },
+      {
+        "generator": "A",
+        "period": 3,
+        "on_dual_eur": -2100.0,
+        "startup_dual_eur": 0.0,
+        "commitment_payment_eur": -2100.0
+      },
+      {
+        "generator": "A",
+        "period": 4,
+        "on_dual_eur": 0.0,
+        "startup_dual_eur": -2100.0,
+        "commitment_payment_eur": 0.0
+      },
+      {
+        "generator": "B",
+        "period": 1,
+        "on_dual_eur": 0.0,
+        "startup_dual_eur": 100.0,
+        "commitment_payment_eur": 100.0
+      },
+      {
+        "generator": "B",
+        "period": 2,
+        "on_dual_eur": 0.0,
+        "startup_dual_eur": 100.0,
+        "commitment_payment_eur": 0.0
+      },
+      {
+        "generator": "B",
+        "period": 3,
+        "on_dual_eur": -4400.0,
+        "startup_dual_eur": 100.0,
+        "commitment_payment_eur": -4400.0
+      },
+      {
+        "generator": "B",
+        "period": 4,
+        "on_dual_eur": 0.0,
+        "startup_dual_eur": 100.0,
+        "commitment_payment_eur": 0.0
+      },
+      {
+        "generator": "C",
+        "period": 1,
+        "on_dual_eur": 0.0,
+        "startup_dual_eur": 0.0,
+        "commitment_payment_eur": 0.0
+      },
+      {
+        "generator": "C",
+        "period": 2,
+        "on_dual_eur": 0.0,
+        "startup_dual_eur": 0.0,
+        "commitment_payment_eur": 0.0
+      },
+      {
+        "generator": "C",
+        "period": 3,
+        "on_dual_eur": 0.0,
+        "startup_dual_eur": 0.0,
+        "commitment_payment_eur": 0.0
+      },
+      {
+        "generator": "C",
+        "period": 4,
+        "on_dual_eur": 0.0,
+        "startup_dual_eur": 0.0,
+        "commitment_payment_eur": 0.0
+      }
+    ],
+    "settlement_by_generator": [
+      {
+        "generator": "A",
+        "energy_revenue_eur": 8000.0,
+        "operating_cost_eur": 3500.0,
+        "commitment_payment_eur": -2400.0,
+        "signed_cost_recovery_residual_eur": -2100.0
+      },
+      {
+        "generator": "B",
+        "energy_revenue_eur": 7400.0,
+        "operating_cost_eur": 3100.0,
+        "commitment_payment_eur": -4300.0,
+        "signed_cost_recovery_residual_eur": 0.0
+      },
+      {
+        "generator": "C",
+        "energy_revenue_eur": 1600.0,
+        "operating_cost_eur": 1600.0,
+        "commitment_payment_eur": 0.0,
+        "signed_cost_recovery_residual_eur": 0.0
+      }
+    ],
+    "total_commitment_payment_eur": -6700.0,
+    "total_signed_cost_recovery_residual_eur": -2100.0
+  },
+  "chp": {
+    "algorithm": "dw",
+    "energy_prices": [
+      {
+        "period": 1,
+        "price_eur_per_mwh": -5.0
+      },
+      {
+        "period": 2,
+        "price_eur_per_mwh": 25.0
+      },
+      {
+        "period": 3,
+        "price_eur_per_mwh": 80.0
+      },
+      {
+        "period": 4,
+        "price_eur_per_mwh": -60.0
+      }
+    ],
+    "dual_objective_eur": 8200.0,
+    "upper_bound_eur": 8200.0,
+    "gap_eur": 0.0,
+    "status": "converged",
+    "iterations": 5,
+    "columns": 11,
+    "dual_history_eur": [
+      2667.857142857143,
+      6001.428571428572,
+      6875.0,
+      7731.25,
+      8200.0
+    ],
+    "solver_runtime_seconds": 0.04199957847595215,
+    "runtime_seconds": 0.10209279996342957,
+    "total_uplift_eur": 0.0,
+    "settlement_by_generator": [
+      {
+        "generator": "A",
+        "energy_revenue_eur": 5900.0,
+        "operating_cost_eur": 3500.0,
+        "scheduled_profit_eur": 2400.0,
+        "best_profit_eur": 2400.0,
+        "lost_opportunity_cost_eur": 0.0
+      },
+      {
+        "generator": "B",
+        "energy_revenue_eur": 7400.0,
+        "operating_cost_eur": 3100.0,
+        "scheduled_profit_eur": 4300.0,
+        "best_profit_eur": 4300.0,
+        "lost_opportunity_cost_eur": 0.0
+      },
+      {
+        "generator": "C",
+        "energy_revenue_eur": 1600.0,
+        "operating_cost_eur": 1600.0,
+        "scheduled_profit_eur": 0.0,
+        "best_profit_eur": 0.0,
+        "lost_opportunity_cost_eur": 0.0
+      }
+    ]
+  }
+}

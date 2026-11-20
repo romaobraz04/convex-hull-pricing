@@ -1,0 +1,172 @@
+{
+  "instance": "minimum_up_down",
+  "uc": {
+    "status": "optimal",
+    "objective_eur": 9790.0,
+    "energy_cost_eur": 9240.0,
+    "startup_cost_eur": 550.0,
+    "dispatch": [
+      {
+        "generator": "A",
+        "period": 1,
+        "production_mw": 60.0,
+        "on": 1,
+        "startup": 1
+      },
+      {
+        "generator": "A",
+        "period": 2,
+        "production_mw": 100.0,
+        "on": 1,
+        "startup": 0
+      },
+      {
+        "generator": "A",
+        "period": 3,
+        "production_mw": 40.0,
+        "on": 1,
+        "startup": 0
+      },
+      {
+        "generator": "A",
+        "period": 4,
+        "production_mw": 100.0,
+        "on": 1,
+        "startup": 0
+      },
+      {
+        "generator": "A",
+        "period": 5,
+        "production_mw": 60.0,
+        "on": 1,
+        "startup": 0
+      },
+      {
+        "generator": "B",
+        "period": 1,
+        "production_mw": 0.0,
+        "on": 0,
+        "startup": 0
+      },
+      {
+        "generator": "B",
+        "period": 2,
+        "production_mw": 80.0,
+        "on": 1,
+        "startup": 1
+      },
+      {
+        "generator": "B",
+        "period": 3,
+        "production_mw": 0.0,
+        "on": 0,
+        "startup": 0
+      },
+      {
+        "generator": "B",
+        "period": 4,
+        "production_mw": 0.0,
+        "on": 0,
+        "startup": 0
+      },
+      {
+        "generator": "B",
+        "period": 5,
+        "production_mw": 0.0,
+        "on": 0,
+        "startup": 0
+      },
+      {
+        "generator": "C",
+        "period": 1,
+        "production_mw": 0.0,
+        "on": 1,
+        "startup": 1
+      },
+      {
+        "generator": "C",
+        "period": 2,
+        "production_mw": 10.0,
+        "on": 1,
+        "startup": 0
+      },
+      {
+        "generator": "C",
+        "period": 3,
+        "production_mw": 0.0,
+        "on": 1,
+        "startup": 0
+      },
+      {
+        "generator": "C",
+        "period": 4,
+        "production_mw": 50.0,
+        "on": 1,
+        "startup": 0
+      },
+      {
+        "generator": "C",
+        "period": 5,
+        "production_mw": 0.0,
+        "on": 1,
+        "startup": 0
+      }
+    ],
+    "runtime_seconds": 0.016000032424926758
+  },
+  "ip": {
+    "status": "optimal",
+    "objective_eur": 9790.0,
+    "energy_prices": [
+      {
+        "period": 1,
+        "price_eur_per_mwh": 10.0
+      },
+      {
+        "period": 2,
+        "price_eur_per_mwh": 70.0
+      },
+      {
+        "period": 3,
+        "price_eur_per_mwh": 10.0
+      },
+      {
+        "period": 4,
+        "price_eur_per_mwh": 70.0
+      },
+      {
+        "period": 5,
+        "price_eur_per_mwh": 10.0
+      }
+    ],
+    "runtime_seconds": 0.003999948501586914
+  },
+  "chp": {
+    "algorithm": "subgradient",
+    "energy_prices": [
+      {
+        "period": 1,
+        "price_eur_per_mwh": 10.03495173518939
+      },
+      {
+        "period": 2,
+        "price_eur_per_mwh": 69.8442029434284
+      },
+      {
+        "period": 3,
+        "price_eur_per_mwh": -39.840670211404685
+      },
+      {
+        "period": 4,
+        "price_eur_per_mwh": 54.12589495715717
+      },
+      {
+        "period": 5,
+        "price_eur_per_mwh": 10.03495173518939
+      }
+    ],
+    "dual_objective_eur": 7995.127234248899,
+    "iterations": 1000,
+    "runtime_seconds": 10.758019800006878
+  }
+}

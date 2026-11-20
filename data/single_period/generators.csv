@@ -1,0 +1,4 @@
+generator,p_min_mw,p_max_mw,marginal_cost_eur_per_mwh,startup_cost_eur,min_up_time_periods,min_down_time_periods,ramp_up_mw_per_period,ramp_down_mw_per_period,startup_ramp_mw_per_period,shutdown_ramp_mw_per_period,initial_on,initial_output_mw
+A,40,100,10,500,,,,,,,0,0
+B,0,60,25,0,,,,,,,0,0
+C,0,50,50,0,,,,,,,0,0

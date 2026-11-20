@@ -1,0 +1,147 @@
+{
+  "instance": "ramping",
+  "uc": {
+    "status": "optimal",
+    "objective_eur": 8200.0,
+    "energy_cost_eur": 8100.0,
+    "startup_cost_eur": 100.0,
+    "dispatch": [
+      {
+        "generator": "A",
+        "period": 1,
+        "production_mw": 70.0,
+        "on": 1,
+        "startup": 0
+      },
+      {
+        "generator": "A",
+        "period": 2,
+        "production_mw": 90.0,
+        "on": 1,
+        "startup": 0
+      },
+      {
+        "generator": "A",
+        "period": 3,
+        "production_mw": 110.0,
+        "on": 1,
+        "startup": 0
+      },
+      {
+        "generator": "A",
+        "period": 4,
+        "production_mw": 80.0,
+        "on": 1,
+        "startup": 0
+      },
+      {
+        "generator": "B",
+        "period": 1,
+        "production_mw": 0.0,
+        "on": 1,
+        "startup": 1
+      },
+      {
+        "generator": "B",
+        "period": 2,
+        "production_mw": 40.0,
+        "on": 1,
+        "startup": 0
+      },
+      {
+        "generator": "B",
+        "period": 3,
+        "production_mw": 80.0,
+        "on": 1,
+        "startup": 0
+      },
+      {
+        "generator": "B",
+        "period": 4,
+        "production_mw": 0.0,
+        "on": 1,
+        "startup": 0
+      },
+      {
+        "generator": "C",
+        "period": 1,
+        "production_mw": 0.0,
+        "on": 1,
+        "startup": 1
+      },
+      {
+        "generator": "C",
+        "period": 2,
+        "production_mw": 0.0,
+        "on": 1,
+        "startup": 0
+      },
+      {
+        "generator": "C",
+        "period": 3,
+        "production_mw": 20.0,
+        "on": 1,
+        "startup": 0
+      },
+      {
+        "generator": "C",
+        "period": 4,
+        "production_mw": 0.0,
+        "on": 1,
+        "startup": 0
+      }
+    ],
+    "runtime_seconds": 0.019999980926513672
+  },
+  "ip": {
+    "status": "optimal",
+    "objective_eur": 8200.0,
+    "energy_prices": [
+      {
+        "period": 1,
+        "price_eur_per_mwh": 25.0
+      },
+      {
+        "period": 2,
+        "price_eur_per_mwh": 25.0
+      },
+      {
+        "period": 3,
+        "price_eur_per_mwh": 80.0
+      },
+      {
+        "period": 4,
+        "price_eur_per_mwh": -60.0
+      }
+    ],
+    "runtime_seconds": 0.003000020980834961
+  },
+  "chp": {
+    "algorithm": "cutting_plane",
+    "energy_prices": [
+      {
+        "period": 1,
+        "price_eur_per_mwh": 4.4930329738600445
+      },
+      {
+        "period": 2,
+        "price_eur_per_mwh": 24.999987023237992
+      },
+      {
+        "period": 3,
+        "price_eur_per_mwh": 79.9995688927693
+      },
+      {
+        "period": 4,
+        "price_eur_per_mwh": 7.188852758176075
+      }
+    ],
+    "dual_objective_eur": 8199.991118320146,
+    "upper_bound_eur": 8200.0,
+    "gap_eur": 0.008881679854312097,
+    "status": "converged",
+    "iterations": 22,
+    "solver_runtime_seconds": 0.19899988174438477,
+    "runtime_seconds": 0.35577589995227754
+  }
+}
