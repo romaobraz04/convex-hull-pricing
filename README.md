@@ -12,11 +12,6 @@ Compare electricity prices and generator settlements for the same unit-commitmen
 
 From the repository root, install the solver and data dependencies. The examples were tested with Python 3.12 and Gurobi 13.0.1. The pip distribution of `gurobipy` includes a size-limited license. [Gurobi installation and licensing](https://support.gurobi.com/hc/en-us/articles/360044290292-How-do-I-install-Gurobi-for-Python)
 
-```sh
-python -m venv .venv
-```
-
-Activate the environment with `source .venv/bin/activate` on Linux or macOS, or `.\.venv\Scripts\Activate.ps1` in PowerShell. Then run:
 
 ```sh
 python -m pip install -r requirements.txt
